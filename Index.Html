@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Link Upload</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Class Link Upload</h1>
+    <!-- Subject List -->
+    <div class="subjects">
+      <button onclick="showSubject('maths')">Maths</button>
+      <button onclick="showSubject('bio')">Biology</button>
+      <button onclick="showSubject('chemistry')">Chemistry</button>
+      <button onclick="showSubject('physics')">Physics</button>
+    </div>
+
+    <!-- Subject Content -->
+    <div id="maths" class="subject">
+      <h2>Maths</h2>
+      <div class="teacher" id="teacher-maths">
+        <!-- Teachers and Topics will be dynamically added here -->
+      </div>
+    </div>
+
+    <div id="bio" class="subject">
+      <h2>Biology</h2>
+      <div class="teacher" id="teacher-bio"></div>
+    </div>
+
+    <div id="chemistry" class="subject">
+      <h2>Chemistry</h2>
+      <div class="teacher" id="teacher-chemistry"></div>
+    </div>
+
+    <div id="physics" class="subject">
+      <h2>Physics</h2>
+      <div class="teacher" id="teacher-physics"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
